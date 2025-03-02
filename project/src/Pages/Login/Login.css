@@ -1,0 +1,216 @@
+.login {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.login .enterasguest {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  margin-top: calc(404px + (100vh - 404px) * 0.5 + 30px);
+  width: auto;
+  height: 45px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .enterasguest:hover {
+  opacity: 0.8;
+}
+
+.login .enterasguest p {
+  color: black;
+  font-size: 1.02rem;
+  font-weight: bold;
+}
+
+.login .card {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  filter: brightness(1);
+  border: 1px solid white;
+  min-width: 400px;
+}
+
+@media (max-width: 500px) {
+  .login .card {
+    min-width: 0;
+    width: 70%;
+  }
+}
+
+.login .card .left {
+  width: 50%;
+  overflow-x: hidden;
+  max-width: 50%;
+  background-color: black;
+  background-size: cover;
+  padding: 50px;
+  padding-left: 50px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .login .card .left {
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: 500px) {
+  .login .card .left {
+    display: none;
+  }
+}
+
+.login .card .left span {
+  font-size: 14px;
+  position: absolute;
+  left: 50;
+  bottom: 102px;
+  width: 170px;
+}
+
+.login .card .left button {
+  width: 35%;
+  min-width: 80px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 7px;
+  position: absolute;
+  left: 0;
+  margin-left: 50px;
+  bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .login .card .left button {
+    margin-left: 16%;
+  }
+}
+
+.login .card .left button:hover {
+  opacity: 0.8;
+}
+
+.login .card .right {
+  width: 50%;
+  max-width: 50%;
+  overflow-x: hidden;
+  padding: 50px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .login .card .right {
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: 500px) {
+  .login .card .right {
+    padding-left: 11%;
+    padding-bottom: 35px;
+  }
+}
+
+.login .card .right h1 {
+  color: black;
+  margin-bottom: 50px;
+}
+
+.login .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .login .card .right form {
+    gap: 20px;
+  }
+}
+
+.login .card .right form input {
+  border: none;
+  border-bottom: 1px solid #888;
+  padding: 11px 4px;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.login .card .right form input::placeholder {
+  color: #555;
+}
+
+.login .card .right form button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  border-radius: 7px;
+  cursor: pointer;
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login .card .right form button div {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.login .card .right form button:hover {
+  opacity: 0.8;
+}
+
+.login .card .right p {
+  width: min-content;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  display: none;
+  pointer-events: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid black;
+  opacity: 0.85;
+  margin-top: 21px;
+  padding-right: 0;
+}
+
+@media (max-width: 500px) {
+  .login .card .right p {
+    display: block;
+    pointer-events: all;
+  }
+}
